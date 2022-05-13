@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10sp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/livemapbtn"
+            android:layout_marginLeft="10sp"
+            android:layout_marginRight="10sp"
+            android:layout_marginTop="10sp"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Open Live Map"
+            android:padding="10dp" />
+        <Button
+            android:id="@+id/mapbtn"
+            android:layout_marginTop="10sp"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Open Map"
+            android:padding="10dp" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_marginTop="10sp"
+        android:text="Latitude:"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/tvLatitude"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:text="Longitude:"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/tvLongitude"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:text="Time of request:"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/tvTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+<!--    <TextView-->
+<!--        android:text="Address"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:textAppearance="?android:attr/textAppearanceLarge"-->
+<!--        android:textStyle="bold"/>-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/tvAddress"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content" />-->
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_marginTop="25sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/recyclerView"/>
+
+
+</LinearLayout>
